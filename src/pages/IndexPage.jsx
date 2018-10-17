@@ -11,10 +11,16 @@ function Description() {
   return (
 
     <div className="container redcontainer">
-      <h1 className="text-center">Reforming Education on Drugs</h1>
+      <h1 className="text-center">
+        <p id="firstLetter">Reforming</p>
+        <div className="space"></div>
+        <p id="firstLetter">Education</p>
+        <div className="space">on</div>
+        <p id="firstLetter-secondLine">Drugs</p>
+      </h1>
       {/* eslint-disable-next-line */}
-      <p>RED’s mission is to establish a foundational understanding of the biological mechanisms involved in illicit drug use and substance abuse. With interactive in-class presentations and demonstrations, we provide students with the ability to engage and think critically with these topics, all while developing a love for learning science.</p>
-    </div>
+      <p> <b>Taking a new perspective of addressing drug use</b> </p>
+      </div>
 
   );
 }
@@ -31,6 +37,7 @@ function Brands() {
 
 export default function IndexPage() {
   document.title = "RED | Reforming Education on Drugs";
+
 
   const carousel = {
     path: "/assets/images/",
@@ -56,7 +63,7 @@ export default function IndexPage() {
 
   return (
     <main>
-      <ImageCarousel path={carousel.path} images={carousel.images} />
+      /*<ImageCarousel path={carousel.path} images={carousel.images} />*/
       <Description />
       <Testimonials testimonials={textCarousel.quotes} />
       <MailChimp />

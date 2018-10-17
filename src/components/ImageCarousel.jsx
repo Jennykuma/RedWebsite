@@ -25,6 +25,7 @@ export default function ImageCarousel(props) {
   };
 
   return (
+    /*
     <div className="container" id="swiper">
       <div className="simple-slider">
         <Swiper {...swiperProps}>
@@ -35,5 +36,7 @@ export default function ImageCarousel(props) {
         </Swiper>
       </div>
     </div>
+    -- removes carousel on site*/
+    <p></p>
   );
 }

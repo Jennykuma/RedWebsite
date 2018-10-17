@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 h1 {
   font-size: 4rem;
-  font-family: "Roboto";
+  font-family: 'Montserrat', 'Roboto';
   text-align: center;
 }
 
@@ -49,7 +51,9 @@ main .container {
 }
 
 .redcontainer {
-  background-color: #D00000;
+  //background-color: #D00000;
+  background-image: url("../assets/images/backgrounds/red_bg.png");
+  width: 100%;
   color: white;
 }
 
@@ -59,9 +63,10 @@ main .container {
   }
 }
 
+/*
 #swiper {
   padding: 0px;
-}
+}*/
 
 #logo {
   height: 2em;
@@ -177,6 +182,7 @@ a:active,
   padding: 0px;
 }
 
+/*
 .testimonial-slider .swiper-pagination-bullet {
   background: #E5E5E5;
   opacity: 1;
@@ -187,7 +193,7 @@ a:active,
   background: #f00;
   opacity: 1;
   border-color: #f00;
-}
+}*/
 
 @media(min-width: 991px) {
   .navigation-clean.navbar .navbar-nav>li>a:hover {
@@ -379,4 +385,28 @@ span {
 
 a:hover>.icon {
   color: red;
+}
+
+#firstLetter::first-letter {
+  font-size: 150%;
+  color: red;
+}
+
+#firstLetter {
+  display: inline-block;
+  font-size: 100%;
+}
+
+#firstLetter-secondLine {
+  font-size: 100%;
+}
+
+#firstLetter-secondLine::first-letter {
+  font-size: 150%;
+  color: red;
+}
+
+.space {
+  margin-left: 15px;
+  display: inline-block;
 }
