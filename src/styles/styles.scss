@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+* {
+  font-family: "Montserrat";
+}
+
 h1 {
   font-size: 4rem;
-  font-family: 'Montserrat', 'Roboto';
+  font-family: "Montserrat", "Roboto";
   text-align: center;
 }
 
@@ -395,10 +399,12 @@ a:hover>.icon {
 #firstLetter {
   display: inline-block;
   font-size: 100%;
+  font-family: "Montserrat";
 }
 
 #firstLetter-secondLine {
   font-size: 100%;
+  font-family: "Montserrat";
 }
 
 #firstLetter-secondLine::first-letter {
@@ -409,4 +415,24 @@ a:hover>.icon {
 .space {
   margin-left: 15px;
   display: inline-block;
+}
+
+#descriptionButton {
+  background: red;
+  margin-top: 2em;
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px 20px;
+
+  font-size: 16px;
+
+  text-align: center;
+  height: 75%;
+  width: 15%;
+}
+
+.graycontainer {
+  background-color: #ffffff;
+  width: 100%;
+  color: dimgrey;
 }

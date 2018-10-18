@@ -21,6 +21,7 @@ export default function TextCarousel(props) {
   };
 
   return (
+    /*
     <div className="container" id="testimonial">
       <Row>
         <Col md={8} lgOffset={2}>
@@ -44,5 +45,7 @@ export default function TextCarousel(props) {
         </Col>
       </Row>
     </div>
+    */
+    <p></p>
   );
 }

@@ -19,9 +19,14 @@ function Description() {
         <p id="firstLetter-secondLine">Drugs</p>
       </h1>
       {/* eslint-disable-next-line */}
-      <p> <b>Taking a new perspective of addressing drug use</b> </p>
-      </div>
-
+      <br/>
+      <p> <b>Taking a new perspective of addressing drug use</b>
+        <br/>
+        <button id="descriptionButton"><b>Book a Presentation</b></button>
+        <br/>
+        <button id="descriptionButton"><b>Get Involved</b></button>
+      </p>
+    </div>
   );
 }
 
@@ -65,7 +70,7 @@ export default function IndexPage() {
     <main>
       /*<ImageCarousel path={carousel.path} images={carousel.images} />*/
       <Description />
-      <Testimonials testimonials={textCarousel.quotes} />
+      /*<Testimonials testimonials={textCarousel.quotes} />*/
       <MailChimp />
       <Brands />
     </main>
