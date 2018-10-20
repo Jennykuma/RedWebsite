@@ -22,11 +22,38 @@ function Description() {
       <br/>
       <p> <b>Taking a new perspective of addressing drug use</b>
         <br/>
-        <button id="descriptionButton"><b>Book a Presentation</b></button>
-        <br/>
-        <button id="descriptionButton"><b>Get Involved</b></button>
+        <div className="button-container">
+          <button id="descriptionButton"><b>Book a Presentation</b></button>
+          <br/>
+          <button id="descriptionButton"><b>Get Involved</b></button>
+        </div>
       </p>
     </div>
+  );
+}
+
+function Mission() {
+  return (
+
+    <div className="mission-container">
+      <p> Fentanyl was declared an epedemic in 2017 when 4000 individuals died due to overdose. This number has ever been increasing and poses a challenge to the health care system.
+      <br/><br/>
+      As a club we educate youth/citizens about reactional use through its biological effects and interactive fun acitivies. These activities help citizens understand the benfits and consequences of drugs helping them make more informed decsions. </p>
+    </div>
+
+  );
+}
+
+function Stats() {
+  return (
+
+    <div className="stats-container">
+      <div className="stat-card"> 21 locations </div>
+      <div className="stat-card"> 62 presentations </div>
+      <div className="stat-card"> 1,468 students </div>
+      <div className="stat-card"> 130 volunteers </div>
+    </div>
+
   );
 }
 
@@ -68,9 +95,9 @@ export default function IndexPage() {
 
   return (
     <main>
-      /*<ImageCarousel path={carousel.path} images={carousel.images} />*/
       <Description />
-      /*<Testimonials testimonials={textCarousel.quotes} />*/
+      <Mission />
+      <Stats />
       <MailChimp />
       <Brands />
     </main>
